@@ -84,25 +84,19 @@
 	  		</plugin>
 	  		<plugin>
 	  			<artifactId>maven-jar-plugin</artifactId>
-	  			<executions>
-	  				<execution>
-	  					<id>development</id>
-	  					<phase>jar:jar</phase>
-	  					<configuration>
-	  						<finalName>${project.artifactId}-${project.version}-DEVELOPMENT</finalName>
-	  						<archive>
-	  							<mainClass>com.ezrebclan.javaWebServer.Main</mainClass>
-	  						</archive>
-	  					</configuration>
-	  				</execution>
-	  				<execution>
-	  					<id>main</id>
-	  					<phase>package</phase>
-	  					<configuration>
-	  						<finalName>${project.artifactId}-${project.version}</finalName>
-	  					</configuration>
-	  				</execution>
-	  			</executions>
+				<goals>
+					<goal>jar</goal>
+				</goals>
+				<configuration>
+					<finalName>${project.artifactId}-${project.version}</finalName>
+					<archive>
+						<manifest>
+							<mainClass>com.ezrebclan.javaWebServer.Main</mainClass>
+							<addClasspath>true</addClasspath>
+							<classpathPrefix>deps/</classpathPrefix>
+						</manifest>
+					</archive>
+				</configuration>
 	  		</plugin>
 	  	</plugins>
 	</build>

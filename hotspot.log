@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<hotspot_log version='160 1' process='1256' time_ms='1429185749110'>
+<hotspot_log version='160 1' process='8104' time_ms='1429198835809'>
 <vm_version>
 <name>
 Java HotSpot(TM) 64-Bit Server VM
@@ -13,10 +13,10 @@ Java HotSpot(TM) 64-Bit Server VM (17.0-b05-fastdebug) for windows-amd64 JRE (1.
 </vm_version>
 <vm_arguments>
 <args>
--Dmaven.home=EMBEDDED -Dclassworlds.conf=C:\Users\bram.zerbe\Desktop\Programming\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5783995944997584905.tmp -Dfile.encoding=Cp1252 
+-Dmaven.home=EMBEDDED -Dclassworlds.conf=C:\Users\bram.zerbe\Desktop\Programming\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5704582694480530690.tmp -Dfile.encoding=Cp1252 
 </args>
 <command>
-org.codehaus.plexus.classworlds.launcher.Launcher -B site javadoc:javadoc package clean
+org.codehaus.plexus.classworlds.launcher.Launcher -B package clean
 </command>
 <launcher>
 SUN_STANDARD
@@ -37,131 +37,109 @@ java.home=C:\Users\bram.zerbe\Desktop\Programming\Java - Needed Stuff\JDK 1.7 x6
 java.class.path=/C:/Users/bram.zerbe/Desktop/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.5.0.20140605-2032/jars/plexus-classworlds-2.5.1.jar
 sun.boot.class.path=C:\Users\bram.zerbe\Desktop\Programming\Java - Needed Stuff\JDK 1.7 x64\jdk1.7.0\fastdebug\jre\lib\resources.jar;C:\Users\bram.zerbe\Desktop\Programming\Java - Needed Stuff\JDK 1.7 x64\jdk1.7.0\fastdebug\jre\lib\rt.jar;C:\Users\bram.zerbe\Desktop\Programming\Java - Needed Stuff\JDK 1.7 x64\jdk1.7.0\fastdebug\jre\lib\sunrsasign.jar;C:\Users\bram.zerbe\Desktop\Programming\Java - Needed Stuff\JDK 1.7 x64\jdk1.7.0\fastdebug\jre\lib\jsse.jar;C:\Users\bram.zerbe\Desktop\Programming\Java - Needed Stuff\JDK 1.7 x64\jdk1.7.0\fastdebug\jre\lib\jce.jar;C:\Users\bram.zerbe\Desktop\Programming\Java - Needed Stuff\JDK 1.7 x64\jdk1.7.0\fastdebug\jre\lib\charsets.jar;C:\Users\bram.zerbe\Desktop\Programming\Java - Needed Stuff\JDK 1.7 x64\jdk1.7.0\fastdebug\jre\classes
 maven.home=EMBEDDED
-classworlds.conf=C:\Users\bram.zerbe\Desktop\Programming\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5783995944997584905.tmp
+classworlds.conf=C:\Users\bram.zerbe\Desktop\Programming\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5704582694480530690.tmp
 file.encoding=Cp1252
 sun.java.launcher=SUN_STANDARD
 </properties>
 </vm_arguments>
 <tty>
-<writer thread='7300'/>
-<dependency_failed type='leaf_type' ctxk='java/lang/IllegalArgumentException' witness='java/lang/NumberFormatException' stamp='1.817'/>
-<dependency_failed type='leaf_type' ctxk='java/io/ByteArrayOutputStream' witness='sun/security/util/DerOutputStream' stamp='8.581'/>
-<dependency_failed type='leaf_type' ctxk='java/util/Stack' witness='sun/net/www/http/ClientVector' stamp='11.760'/>
-<dependency_failed type='leaf_type' ctxk='java/util/Stack' witness='sun/net/www/http/ClientVector' stamp='11.760'/>
-<dependency_failed type='leaf_type' ctxk='java/util/Stack' witness='sun/net/www/http/ClientVector' stamp='11.760'/>
-<dependency_failed type='leaf_type' ctxk='java/util/Stack' witness='sun/net/www/http/ClientVector' stamp='11.760'/>
-<dependency_failed type='unique_concrete_method' x='java/util/Hashtable rehash ()V' witness='org/apache/commons/logging/impl/WeakHashtable' stamp='13.677'/>
-<dependency_failed type='leaf_type' ctxk='java/io/EOFException' witness='org/apache/xerces/impl/XMLEntityScanner$1' stamp='13.887'/>
-<dependency_failed type='unique_concrete_method' x='java/util/HashMap size ()I' witness='org/apache/commons/collections/FastHashMap' stamp='14.036'/>
-<dependency_failed type='unique_concrete_method' x='java/io/Reader read ([C)I' witness='org/apache/velocity/tools/view/ImportSupport$SafeClosingHttpURLConnectionReader' stamp='14.329'/>
+<writer thread='7560'/>
+<dependency_failed type='leaf_type' ctxk='java/lang/IllegalArgumentException' witness='java/lang/NumberFormatException' stamp='1.901'/>
 <statistics type='opto'>
 --- Compiler Statistics ---
-Methods seen: 12270  Methods parsed: 12268  Nodes created: 2731536
-Reasons for parse failures (NOT cumulative):
-Blocks parsed: 42654  Blocks seen: 44156
-54285 original NULL checks - 43426 elided (79%); optimizer leaves 9677,
-5049 made implicit (52%)
-CCP: 963  constants found: 19
-Total frameslots = 10552, Max frameslots = 60
+Methods seen: 4539  Methods parsed: 4539  Nodes created: 988327
+Blocks parsed: 15107  Blocks seen: 15812
+17382 original NULL checks - 13831 elided (79%); optimizer leaves 3433,
+1930 made implicit (56%)
+CCP: 488  constants found: 8
+Total frameslots = 5296, Max frameslots = 56
 Inserted 0 spill loads, 0 spill stores, 0 mem-mem moves and 0 copies.
 Total load cost=      0, store cost =      0, mem-mem cost =  0.00, copy cost =     0.
 Adjusted spill cost =       0.
-Conservatively coalesced 8142 copies, 0 pairs, 50538 post alloc.
-Used cisc instruction  2311,  remained in register 17119
-Average allocation trips 1.749232
+Conservatively coalesced 3164 copies, 0 pairs, 17193 post alloc.
+Used cisc instruction  866,  remained in register 6943
+Average allocation trips 1.729084
 High Pressure Blocks = 0, Low Pressure Blocks = 0
-Nops added 0 bytes to total of 1971527 bytes, for 0.00%
+Nops added 0 bytes to total of 745890 bytes, for 0.00%
 Peephole: peephole rules applied: 0
-PhaseIdealLoop=4085, sum _unique=8023038
+PhaseIdealLoop=2030, sum _unique=2844795
 </statistics>
 <statistics type='intrinsic'>
 Compiler intrinsic usage:
-    73 ( 6.7%) _hashCode (worked,virtual,nonvirtual)
-   114 (10.4%) _getClass (worked)
-    34 ( 3.1%) _clone (worked)
-    64 ( 5.9%) _min (worked)
-    21 ( 1.9%) _max (worked)
-    21 ( 1.9%) _identityHashCode (worked)
-     1 ( 0.1%) _currentTimeMillis (worked)
-    58 ( 5.3%) _nanoTime (worked)
-   227 (20.7%) _arraycopy (worked)
-    21 ( 1.9%) _currentThread (worked)
-    18 ( 1.6%) _isAssignableFrom (worked)
-    13 ( 1.2%) _isArray (worked)
-     4 ( 0.4%) _isPrimitive (worked)
-    11 ( 1.0%) _getSuperclass (worked)
-     6 ( 0.5%) _getComponentType (worked)
-     1 ( 0.1%) _getClassAccessFlags (worked)
-     5 ( 0.5%) _getLength (worked)
-    16 ( 1.5%) _getCallerClass (worked,failed)
-     6 ( 0.5%) _newArray (worked)
-    85 ( 7.8%) _copyOf (worked)
-    12 ( 1.1%) _compareTo (worked)
-    18 ( 1.6%) _indexOf (worked)
-   185 (16.9%) _equals (worked)
-     0 ( 0.0%) _checkIndex (disabled)
-     2 ( 0.2%) _getObject (worked)
-     2 ( 0.2%) _putObject (worked)
-     2 ( 0.2%) _getObjectVolatile (worked)
-    30 ( 2.7%) _getLong_raw (worked)
-    36 ( 3.3%) _putLong_raw (worked)
-     4 ( 0.4%) _compareAndSwapObject (worked)
-     4 ( 0.4%) _compareAndSwapInt (worked)
-  1094 (100.0%) total (worked,failed,disabled,virtual,nonvirtual)
+    37 ( 7.9%) _hashCode (worked,virtual,nonvirtual)
+    55 (11.7%) _getClass (worked)
+    18 ( 3.8%) _clone (worked)
+    40 ( 8.5%) _min (worked)
+     4 ( 0.9%) _max (worked)
+    11 ( 2.3%) _identityHashCode (worked)
+   102 (21.7%) _arraycopy (worked)
+     6 ( 1.3%) _currentThread (worked)
+    15 ( 3.2%) _isAssignableFrom (worked)
+    11 ( 2.3%) _isArray (worked)
+     4 ( 0.9%) _isPrimitive (worked)
+     6 ( 1.3%) _getSuperclass (worked)
+     6 ( 1.3%) _getComponentType (worked)
+     1 ( 0.2%) _getClassAccessFlags (worked)
+     5 ( 1.1%) _getLength (worked)
+    12 ( 2.6%) _getCallerClass (worked,failed)
+     5 ( 1.1%) _newArray (worked)
+    30 ( 6.4%) _copyOf (worked)
+     6 ( 1.3%) _indexOf (worked)
+    89 (19.0%) _equals (worked)
+     2 ( 0.4%) _getObject (worked)
+     2 ( 0.4%) _getObjectVolatile (worked)
+     2 ( 0.4%) _compareAndSwapInt (worked)
+   469 (100.0%) total (worked,failed,virtual,nonvirtual)
 </statistics>
 <statistics type='deoptimization'>
 Deoptimization traps recorded:
-   162 (100.0%) total
-     null_check/make_not_entrant/checkcast: 12 (7.4%)
-  class_check/maybe_recompile/invokevirtual: 104 (64.2%)
-  class_check/maybe_recompile/invokeinterface: 14 (8.6%)
-     class_check/maybe_recompile/checkcast: 9 (5.6%)
-       array_check/maybe_recompile/aastore: 4 (2.5%)
-                  unloaded/reinterpret/new: 1 (0.6%)
-           unreached/reinterpret/ifnonnull: 13 (8.0%)
-              unreached/reinterpret/ifnull: 5 (3.1%)
+    49 (100.0%) total
+     null_check/make_not_entrant/checkcast: 7 (14.3%)
+  class_check/maybe_recompile/invokevirtual: 25 (51.0%)
+  class_check/maybe_recompile/invokeinterface: 6 (12.2%)
+     class_check/maybe_recompile/checkcast: 3 (6.1%)
+                  unloaded/reinterpret/new: 1 (2.0%)
+           unreached/reinterpret/ifnonnull: 6 (12.2%)
+              unreached/reinterpret/ifnull: 1 (2.0%)
 </statistics>
 <statistics type='nmethod'>
-Statistics for 30 native nmethods:
- N. total size  = 32280
- N. relocation  = 3248
- N. main code   = 20248
-Statistics for 964 bytecoded nmethods:
- total in heap  = 5719144
- relocation     = 185760
- main code      = 1985664
- stub code      = 95692
- constants      = 15268
- scopes data    = 1069488
- scopes pcs     = 1763216
- dependencies   = 11448
- handler table  = 200592
- nul chk table  = 45768
- oops           = 73192
-Debug Data Chunks: 431230, shared 32314+268089, non-SP&apos;s elided 786
-PcDesc Statistics:  48662 queries, 7.31 comparisons per query
-  caches=964 queries=48662/0, hits=0+36098, tests=190866+164901, adds=12564
+Statistics for 18 native nmethods:
+ N. total size  = 19008
+ N. relocation  = 1920
+ N. main code   = 11808
+Statistics for 488 bytecoded nmethods:
+ total in heap  = 2129320
+ relocation     = 67528
+ main code      = 752192
+ stub code      = 31444
+ constants      = 2036
+ scopes data    = 382696
+ scopes pcs     = 630480
+ dependencies   = 5384
+ handler table  = 68712
+ nul chk table  = 18136
+ oops           = 32448
+Debug Data Chunks: 121200, shared 11440+64273, non-SP&apos;s elided 247
+PcDesc Statistics:  3852 queries, 15.81 comparisons per query
+  caches=488 queries=3852/0, hits=0+526, tests=19733+41171, adds=3326
 </statistics>
 <statistics type='SharedRuntime'>
-  221 monitor enter slow
-   93 monitor exit slow
-  178 new instance requires GC
-  374 new array requires GC
-  217 inline cache miss in compiled
-   37 wrong method
-  176 unresolved static call site
-  494 unresolved virtual call site
- 1308 unresolved opt virtual call site
-119166 slow partial subtype
-42012 byte array copies
-2666642 short array copies
-163887 int array copies
-693785 long array copies
- 2131 checkcast array copies
-25915 find exception handler
-40599 rethrow handler
+    5 monitor enter slow
+  149 new instance requires GC
+  309 new array requires GC
+  107 inline cache miss in compiled
+    3 wrong method
+  112 unresolved static call site
+  265 unresolved virtual call site
+  513 unresolved opt virtual call site
+41025 slow partial subtype
+ 1853 byte array copies
+864014 short array copies
+63425 int array copies
+198270 long array copies
+   11 checkcast array copies
 </statistics>
-<tty_done stamp='30.159'/>
+<tty_done stamp='11.007'/>
 </tty>
-<hotspot_log_done stamp='30.159'/>
+<hotspot_log_done stamp='11.007'/>
 </hotspot_log>
